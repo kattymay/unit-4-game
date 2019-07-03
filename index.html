@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Crystal Collector</title>
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+<div class="jumbotron">
+    <h1 class="display-4"><strong>Crystal Collector!</strong></h1>
+    <hr class="my-4">
+    <p>
+        You will be given a random number at the start of the<br>
+        game.<br>
+        There are four crystals below. By clicking on a crystal<br>
+        you will add a specific amount of points to your total score.<br>
+        You win the game by matching your total score to the random<br>
+        number. You lose the game if your total score goes above<br>
+        the ran it.<br>
+        The value of each crystal is hidden from you until you<br>
+        click on it.<br>
+        Each time the game restarts, the game will change the value of<br>
+        each crystal.<br>
+    </p>
+
+    <button id="gem-1" type="button" data-value="" class="btn btn-outline-primary">Gem 1</button>
+    <button id="gem-2" type="button" data-value="" class="btn btn-outline-secondary">Gem 2</button>
+    <button id="gem-3" type="button" data-value="" class="btn btn-outline-success">Gem 3</button>
+    <button id="gem-4" type="button" data-value="" class="btn btn-outline-danger">Gem 4</button>
+
+    <div class="card" style="width: 18rem;">
+        <li class="list-group-item"><strong>Random Number</strong>
+            <div id="randomNumber">0</div>
+        </li>
+        <li class="list-group-item"><strong>User Score</strong>
+            <div id="userScore">0</div>
+        </li>
+        <li class="list-group-item"><strong>Wins</strong>
+            <div id="wins">0</div>
+        </li>
+        <li class="list-group-item"><strong>Losses</strong>
+            <div id="losses">0</div>
+        </li>
+    </div>
+
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+</div>
+
+</html>
